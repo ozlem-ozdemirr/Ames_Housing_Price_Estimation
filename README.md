@@ -1,32 +1,63 @@
 ## Ames Housing Price Estimation
 
 ### Objective:
-##### To develop predictive models that estimate residential property prices using the Ames Housing dataset, leveraging machine            ##### learning techniques for accurate and interpretable results.
+#####     The primary goal of this project is to develop machine learning models that accurately predict house prices using the Ames      #####     Housing dataset. This dataset includes 80 explanatory variables describing various aspects of residential homes in Ames, Iowa.
 
-### Approach:
+### Dataset:
+#####     The dataset was obtained from an online source and loaded using Pandas. It contains detailed information about housing features, #####     with both numerical and categorical variables. The target variable is SalePrice, which represents the final sale price of each #####     house.
 
-#### Data Preparation:
+### Steps Taken in the Project:
 
-##### - Dropped high-missing-value columns and imputed missing data (mean for numeric, 'None' for categorical).
+####   Data Exploration:
 
-##### - Applied log transformation to normalize the skewed SalePrice distribution.
+#####     The dataset's shape, structure, and summary statistics were examined.
 
-#### Feature Selection:
+#####     Missing values were identified and handled:
 
-##### - Chose top correlated features with SalePrice, such as OverallQual, GrLivArea, and GarageCars.
+#####     Columns with excessive missing values (e.g., PoolQC, MiscFeature, etc.) were dropped.
 
-#### Modeling:
+#####     Missing numerical values were filled with the mean of each column.
 
-##### - Trained three regression models: Linear Regression, Decision Tree, and Random Forest.
+#####     Missing categorical values were replaced with the string 'None'.
 
-##### - Evaluated using RMSE and R² metrics.
+####   Data Visualization:
 
-#### Results:
+#####     The distribution of the target variable SalePrice was visualized.
 
-##### - Random Forest showed superior performance.
+#####     To normalize the skewness in SalePrice, a log transformation (np.log1p) was applied.
 
-##### - Visual comparison of actual vs. predicted prices confirmed model accuracy.
+####   Feature Selection:
+
+#####     A correlation matrix was computed to identify variables most strongly associated with SalePrice.
+
+#####     The top features based on correlation included: 
+#####     OverallQual, GrLivArea, GarageCars, TotalBsmtSF, 1stFlrSF, FullBath, TotRmsAbvGrd, YearBuilt.
+
+####   Model Building:
+
+#####     The selected features were split into training and test datasets (80% train / 20% test).
+
+#####     Three regression models were trained:
+
+#####       Linear Regression
+
+#####       Decision Tree Regressor (with a maximum depth of 5)
+
+#####       Random Forest Regressor (with 100 trees and a maximum depth of 10)
+
+####   Model Evaluation:
+
+#####     Models were evaluated using:
+
+#####       Root Mean Squared Error (RMSE)
+
+#####       R-squared (R²) Score
+
+#####     The evaluation metrics were printed for each model.
+
+####   Result Visualization:
+
+#####     A scatter plot was generated to compare the actual and predicted values for the Random Forest model (log-transformed values), #####     showing how well the model fits the data.
 
 ### Conclusion:
-##### The project effectively demonstrates end-to-end housing price prediction, highlighting the importance of feature selection, data ##### preprocessing, and model evaluation in real estate analytics.
-
+#####     The project demonstrates a full machine learning workflow for predicting house prices, including preprocessing, feature     #####     selection, model training, and evaluation. Among the models tested, the Random Forest Regressor likely performed best due to its #####     ability to capture complex nonlinear relationships in the data. The use of log-transformation helped to stabilize variance and #####     improve model accuracy.
