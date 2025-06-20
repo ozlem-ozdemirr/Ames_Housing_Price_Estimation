@@ -1,10 +1,10 @@
 ## Ames Housing Price Estimation
 
 ### Objective:
-##### The primary goal of this project is to develop machine learning models that accurately predict house prices using the Ames      ##### Housing dataset. This dataset includes 80 explanatory variables describing various aspects of residential homes in Ames.
+##### The primary goal of this project is to develop machine learning models that accurately predict house prices using the Ames Housing dataset. This dataset includes 80 explanatory variables describing various aspects of residential homes in Ames.
 
 ### Dataset:
-##### The dataset was obtained from an online source and loaded using Pandas. It contains detailed information about housing features, ##### with both numerical and categorical variables. The target variable is SalePrice, which represents the final sale price of each house.
+##### The dataset was obtained from an online source and loaded using Pandas. It contains detailed information about housing features, with both numerical and categorical variables. The target variable is SalePrice, which represents the final sale price of each house.
 
 ### Steps Taken in the Project:
 
@@ -57,7 +57,7 @@
 
 #### Result Visualization:
 
-##### A scatter plot was generated to compare the actual and predicted values for the Random Forest model (log-transformed values),showing ##### how well the model fits the data.
+##### A scatter plot was generated to compare the actual and predicted values for the Random Forest model (log-transformed values),showing how well the model fits the data.
 
 ### Conclusion:
 ##### The project demonstrates a full machine learning workflow for predicting house prices, including preprocessing, feature selection, model training, and evaluation. Among the models tested, the Random Forest Regressor likely performed best due to its ability to capture complex nonlinear relationships in the data. The use of log-transformation helped to stabilize variance and improve model accuracy.
