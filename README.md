@@ -7,26 +7,26 @@
 
 #### Data Preparation:
 
-        ##### - Dropped high-missing-value columns and imputed missing data (mean for numeric, 'None' for categorical).
+##### - Dropped high-missing-value columns and imputed missing data (mean for numeric, 'None' for categorical).
 
-        ##### - Applied log transformation to normalize the skewed SalePrice distribution.
+##### - Applied log transformation to normalize the skewed SalePrice distribution.
 
-    #### Feature Selection:
+#### Feature Selection:
 
-        ##### - Chose top correlated features with SalePrice, such as OverallQual, GrLivArea, and GarageCars.
+##### - Chose top correlated features with SalePrice, such as OverallQual, GrLivArea, and GarageCars.
 
-    #### Modeling:
+#### Modeling:
 
-        ##### - Trained three regression models: Linear Regression, Decision Tree, and Random Forest.
+##### - Trained three regression models: Linear Regression, Decision Tree, and Random Forest.
 
-        ##### - Evaluated using RMSE and R² metrics.
+##### - Evaluated using RMSE and R² metrics.
 
-    #### Results:
+#### Results:
 
-        ##### - Random Forest showed superior performance.
+##### - Random Forest showed superior performance.
 
-        ##### - Visual comparison of actual vs. predicted prices confirmed model accuracy.
+##### - Visual comparison of actual vs. predicted prices confirmed model accuracy.
 
 ### Conclusion:
-    ##### The project effectively demonstrates end-to-end housing price prediction, highlighting the importance of feature selection, data     ##### preprocessing, and model evaluation in real estate analytics.
+##### The project effectively demonstrates end-to-end housing price prediction, highlighting the importance of feature selection, data ##### preprocessing, and model evaluation in real estate analytics.
 
