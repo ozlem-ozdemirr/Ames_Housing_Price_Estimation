@@ -1,11 +1,11 @@
 ## Ames Housing Price Estimation
 
 ### Objective:
-    ##### To develop predictive models that estimate residential property prices using the Ames Housing dataset, leveraging machine            ##### learning techniques for accurate and interpretable results.
+##### To develop predictive models that estimate residential property prices using the Ames Housing dataset, leveraging machine            ##### learning techniques for accurate and interpretable results.
 
 ### Approach:
 
-    #### Data Preparation:
+#### Data Preparation:
 
         ##### - Dropped high-missing-value columns and imputed missing data (mean for numeric, 'None' for categorical).
 
