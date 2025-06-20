@@ -60,4 +60,4 @@
 ##### A scatter plot was generated to compare the actual and predicted values for the Random Forest model (log-transformed values),showing ##### how well the model fits the data.
 
 ### Conclusion:
-##### The project demonstrates a full machine learning workflow for predicting house prices, including preprocessing, feature selection, ##### model training, and evaluation. Among the models tested, the Random Forest Regressor likely performed best due to its ability to ##### capture complex nonlinear relationships in the data. The use of log-transformation helped to stabilize variance and improve model ##### accuracy.
+##### The project demonstrates a full machine learning workflow for predicting house prices, including preprocessing, feature selection,   ##### model training, and evaluation. Among the models tested, the Random Forest Regressor likely performed best due to its ability to     ##### capture complex nonlinear relationships in the data. The use of log-transformation helped to stabilize variance and improve model    ##### accuracy.
